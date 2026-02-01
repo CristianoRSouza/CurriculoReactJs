@@ -1,12 +1,11 @@
 const habilidades = {
   "Linguagens": ["C#", "JavaScript", "TypeScript", "Python"],
-  "Backend": ["ASP.NET Core", "NestJS", "Django", "Flask", "Node.js"],
-  "Frontend": ["ReactJs", "React Native", "Vue.js", "HTML/CSS"],
+  "Backend": ["ASP.NET Core", "NestJS", "Django", "FastAPI", "Node.js"],
+  "Frontend": ["ReactJs", "React Native", "Angular", "HTML/CSS"],
   "ORM & Dados": ["Entity Framework", "Prisma", "TypeORM", "Dapper"],
   "Banco de Dados": ["SQL Server", "PostgreSQL", "MySQL"],
   "DevOps & Ferramentas": ["Docker", "RabbitMQ", "Keycloak", "Git"],
   "Testes": ["XUnit", "Testes Unitarios", "Testes de Integracao"],
-  "Automacao": ["RPA", "Python", "PyAutoGui"],
 };
 
 export const Sobre = () => {
@@ -37,12 +36,12 @@ export const Sobre = () => {
             de programacao e metodologias ageis no dia a dia.
           </p>
           <div className="flex items-center gap-3 rounded-lg bg-accent/5 p-4 ring-1 ring-accent/10">
-            <span className="text-2xl">🤖</span>
+            <span className="text-2xl">💻</span>
             <p className="text-sm leading-relaxed text-gray-300">
-              Apaixonado pelo mundo de <span className="font-semibold text-accent-light">RPA</span>,
-              usando Python e PyAutoGui. Experiencia tambem com{" "}
+              Experiencia com{" "}
               <span className="font-semibold text-accent-light">React Native</span> e
               dominio completo do <span className="font-semibold text-accent-light">ReactJs</span>.
+              Foco em arquitetura de microsservicos e microfrontends.
             </p>
           </div>
         </div>

@@ -1,9 +1,17 @@
 const experiencias = [
   {
+    empresa: "CNH Industrial - Case IH",
+    cargo: "Desenvolvedor Full Stack",
+    periodo: "Mai 2025 - Presente",
+    atual: true,
+    descricao:
+      "Desenvolvimento de projeto do zero utilizando arquitetura de microsserviços e microfrontends. Construção completa do frontend com ReactJs e backend com ASP.NET Core API. Implementação de autenticação e autorização com Keycloak, mensageria assíncrona com RabbitMQ, API Gateway com Kong e containerização com Docker. Responsável por toda a arquitetura e desenvolvimento tanto do front-end quanto do back-end da aplicação.",
+    tags: ["ReactJs", "ASP.NET Core", "Keycloak", "Docker", "RabbitMQ", "Kong", "Microsserviços"],
+  },
+  {
     empresa: "Faster Soluções em Tecnologias",
     cargo: "Desenvolvedor Web",
-    periodo: "Abr 2024 - Presente",
-    atual: true,
+    periodo: "Abr 2024 - Mai 2025",
     descricao:
       "Desenvolvimento e manutenção de aplicações web com ASP.NET Core, criando APIs RESTful e serviços backend robustos. Implementação de soluções modulares baseadas em arquitetura de microsserviços com RabbitMQ para comunicação assíncrona. Utilização de Entity Framework com consultas otimizadas e padrões de repositório. Integração com Keycloak (OpenID Connect e OAuth2) para autenticação e autorização. Ambientes containerizados com Docker e aplicação de princípios SOLID com testes automatizados.",
     tags: ["ASP.NET Core", "RabbitMQ", "Docker", "Keycloak", "Entity Framework", "SOLID"],

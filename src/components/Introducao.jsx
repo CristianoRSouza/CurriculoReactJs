@@ -1,6 +1,6 @@
 import LogoC from "../assets/logo.png";
 import LogoR from "../assets/react.svg";
-import LogoN from "../assets/node.png";
+import LogoPy from "../assets/python.svg";
 
 export const Introducao = () => {
   return (
@@ -25,7 +25,7 @@ export const Introducao = () => {
 
         {/* Subtitle */}
         <p className="animate-fade-in-up delay-200 mx-auto mb-12 max-w-2xl text-lg text-gray-400 md:text-xl">
-          Construindo soluções robustas com C#, .NET, React e Node.js.
+          Construindo soluções robustas com C#, .NET, React e Python.
           Arquitetura de microsserviços, APIs RESTful e aplicações web modernas.
         </p>
 
@@ -58,15 +58,15 @@ export const Introducao = () => {
           </div>
 
           <div className="group flex flex-col items-center gap-2">
-            <div className="rounded-2xl border border-white/5 bg-surface-light/50 p-4 backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-2 group-hover:border-green-500/30 group-hover:shadow-lg group-hover:shadow-green-500/10">
+            <div className="rounded-2xl border border-white/5 bg-surface-light/50 p-4 backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-2 group-hover:border-yellow-500/30 group-hover:shadow-lg group-hover:shadow-yellow-500/10">
               <img
-                src={LogoN}
-                alt="Node.js"
+                src={LogoPy}
+                alt="Python"
                 className="h-10 w-10 object-contain transition-transform duration-300 md:h-14 md:w-14"
               />
             </div>
             <span className="text-xs font-medium text-gray-500 transition-colors group-hover:text-gray-300">
-              Node.js
+              Python
             </span>
           </div>
         </div>
