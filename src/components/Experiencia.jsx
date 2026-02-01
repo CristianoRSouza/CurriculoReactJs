@@ -21,8 +21,8 @@ const experiencias = [
     cargo: "Desenvolvedor de Software",
     periodo: "Dez 2022 - 2024",
     descricao:
-      "Desenvolvimento de soluções em C# e AspNetCore 2.2 com Fluent API e Fluent Validation. Refatoração de procedures e camadas do projeto. Integração de aplicações com Dapper e Entity Framework. Migração de projetos para NestJS com TypeScript e Prisma. Implementação de front-end com Vue.js e Bootstrap Vue.",
-    tags: ["C#", "NestJS", "Vue.js", "Prisma", "Dapper"],
+      "Desenvolvimento de soluções em C# e AspNetCore 2.2 com Fluent API e Fluent Validation. Refatoração de procedures e camadas do projeto. Integração de aplicações com Dapper e Entity Framework. Migração de projetos para NestJS com TypeScript e Prisma. Implementação de front-end com Angular.",
+    tags: ["C#", "NestJS", "Angular", "Prisma", "Dapper"],
   },
   {
     empresa: "Grupo Apisul",
@@ -35,7 +35,7 @@ const experiencias = [
   {
     empresa: "Grupo Services",
     cargo: "Desenvolvedor Junior",
-    periodo: "Out 2020 - Nov 2021",
+    periodo: "2018 - 2019",
     descricao:
       "Desenvolvimento de aplicações em Node.js com novas funcionalidades. Configuração e suporte a CRM. Integração de APIs e implementação de disparos de SMS. Testes unitários e de integração, revisão e otimização de código com a equipe.",
     tags: ["Node.js", "APIs REST", "Git", "CRM"],
@@ -43,7 +43,7 @@ const experiencias = [
   {
     empresa: "NHG",
     cargo: "Desenvolvedor de Software",
-    periodo: "Dez 2022 - 2024",
+    periodo: "2019 - 2020",
     descricao:
       "Desenvolvimento de features e correção de bugs em sistemas de rastreamento de carga e controle de risco. Testes de unidade, desenvolvimento web com .NET, SQL Server, ReactJs. Criação e manutenção de serviços Windows para automação de processos.",
     tags: [".NET", "SQL Server", "ReactJs", "Windows Services"],
