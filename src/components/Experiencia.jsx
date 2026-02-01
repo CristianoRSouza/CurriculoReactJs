@@ -1,125 +1,119 @@
-import styled from "styled-components";
-
-const Container = styled.div`
-margin: 0px 51px;
-display:flex;
-justify-content:center;
-align-content: center;
-gap:25px;
-color:white;
-`
-
-const Linha = styled.hr`
-  margin: 0px;
-  padding: 0px;
-  border: 1px solid #ccc;
-  width: 100%;
-`;
-const Paragrafo = styled.p`
-    color:white;
-    margin:0px 0px 0px 0px;
-
-    @media (max-width: 480px) {
-    width: 100%;
-  }
-`
-const Section = styled.section`
-width:500px;
-&.sectionForma{
-    text-align:center;
-}
-@media (max-width: 480px) {
-    width: 100%;
-    box-sizing: border-box; 
-    overflow: hidden; 
-  }
-`
-const TituloPrincipal = styled.h1`
-color:white;
-margin:0px;
-font-size:18px;
-margin-bottom:5px;
-`
-
-
-const Titulo = styled.h4`
-color:white;
-margin:0px;
-font-size:18px;
-`
-
-const SubTitulo = styled.h3`
-font-size:14px;
-color:white;
-margin:0px;
-`
-
-
+const experiencias = [
+  {
+    empresa: "Faster Soluções em Tecnologias",
+    cargo: "Desenvolvedor Web",
+    periodo: "Abr 2024 - Presente",
+    atual: true,
+    descricao:
+      "Desenvolvimento e manutenção de aplicações web com ASP.NET Core, criando APIs RESTful e serviços backend robustos. Implementação de soluções modulares baseadas em arquitetura de microsserviços com RabbitMQ para comunicação assíncrona. Utilização de Entity Framework com consultas otimizadas e padrões de repositório. Integração com Keycloak (OpenID Connect e OAuth2) para autenticação e autorização. Ambientes containerizados com Docker e aplicação de princípios SOLID com testes automatizados.",
+    tags: ["ASP.NET Core", "RabbitMQ", "Docker", "Keycloak", "Entity Framework", "SOLID"],
+  },
+  {
+    empresa: "Conduent",
+    cargo: "Desenvolvedor de Software",
+    periodo: "Dez 2022 - 2024",
+    descricao:
+      "Desenvolvimento de soluções em C# e AspNetCore 2.2 com Fluent API e Fluent Validation. Refatoração de procedures e camadas do projeto. Integração de aplicações com Dapper e Entity Framework. Migração de projetos para NestJS com TypeScript e Prisma. Implementação de front-end com Vue.js e Bootstrap Vue.",
+    tags: ["C#", "NestJS", "Vue.js", "Prisma", "Dapper"],
+  },
+  {
+    empresa: "Grupo Apisul",
+    cargo: "Desenvolvedor de Software",
+    periodo: "Out 2020 - Nov 2021",
+    descricao:
+      "Desenvolvimento e sustentação de aplicações em WebForms, ASP.NET MVC e AspNetCore. Gestão de banco de dados SQL Server incluindo modelagem e otimização de performance. Implementação de soluções com Dapper e Entity Framework. Testes de unidade e integração para validação de funcionalidades.",
+    tags: ["ASP.NET MVC", "SQL Server", "Entity Framework", "WebForms"],
+  },
+  {
+    empresa: "Grupo Services",
+    cargo: "Desenvolvedor Junior",
+    periodo: "Out 2020 - Nov 2021",
+    descricao:
+      "Desenvolvimento de aplicações em Node.js com novas funcionalidades. Configuração e suporte a CRM. Integração de APIs e implementação de disparos de SMS. Testes unitários e de integração, revisão e otimização de código com a equipe.",
+    tags: ["Node.js", "APIs REST", "Git", "CRM"],
+  },
+  {
+    empresa: "NHG",
+    cargo: "Desenvolvedor de Software",
+    periodo: "Dez 2022 - 2024",
+    descricao:
+      "Desenvolvimento de features e correção de bugs em sistemas de rastreamento de carga e controle de risco. Testes de unidade, desenvolvimento web com .NET, SQL Server, ReactJs. Criação e manutenção de serviços Windows para automação de processos.",
+    tags: [".NET", "SQL Server", "ReactJs", "Windows Services"],
+  },
+];
 
 export const Experiencia = () => {
-    return (
-        <Container>
-        <Section className="sectionExp">
-            <TituloPrincipal> Experiências </TituloPrincipal>
-            <Linha/>
-            <Titulo>Faster soluções em Tecnologias</Titulo>
-            <SubTitulo>Desenvolvedor web</SubTitulo>
-            <SubTitulo>abr de 2024, Atuando</SubTitulo>
-            <Paragrafo>
-                Sólida experiência no desenvolvimento e manutenção de aplicações web utilizando o ASP.NET Core, com foco na criação de APIs RESTful e serviços backend robustos. ampla vivência na implementação de soluções modulares baseadas em arquitetura de micro serviços, promovendo alta disponibilidade e desempenho das aplicações.
-                Atuando no design e desenvolvimento de integrações assíncronas com RabbitMQ, assegurando o processamento confiável de mensagens e a comunicação eficiente entre serviços. experiência na implementação de estratégias de acesso a dados com Entity Framework, utilizando consultas otimizadas e padrões de repositório para manipulação de bancos de dados relacionais.
-                Integração de soluções de autenticação e autorização utilizando Keycloak, com foco em segurança e conformidade com padrões modernos, como OpenID Connect e OAuth2. Também em ambientes containerizados com Docker, criando imagens customizadas para serviços e garantindo a portabilidade das soluções.
-                Aplicando boas práticas como injeção de dependência, testes automatizados e princípios SOLID no desenvolvimento com ASP.NET Core, sempre buscando entregar soluções alinhadas às necessidades do negócio e com alta qualidade técnica.
-            </Paragrafo>
-            <Linha/>
-            <Titulo>Conduent</Titulo>
-            <SubTitulo>Desenvolvedor de Software</SubTitulo>
-            <SubTitulo>dez de 2022 - 2024 · 1 ano 2 meses</SubTitulo>
-            <Paragrafo>
-                Desenvolver e implementar soluções em C# e AspNetCore 2.2, utilizando Fluent API e Fluent Validation.
-                Refatorar procedures e camadas do projeto.
-                Integrar aplicações com Dapper e Entity Framework.
-                Migrar projetos para NESTJS, utilizando Typescript e Prisma para criação de APIs.
-                Implementar front-end com Vue.js e Bootstrap Vue.
-                Documentar processos e procedimentos técnicos.
-            </Paragrafo>
-            <Linha/>
-            <Titulo>Grupo Apisul </Titulo>
-            <SubTitulo>Desenvolvedor de Software</SubTitulo>
-            <SubTitulo>out de 2020 - nov de 2021 · 1 ano 2 meses</SubTitulo>
-            <Paragrafo>
-                Desenvolver e sustentar aplicações em Webforms, ASPNETMVC, C# e AspNetCore .
-                Realizar a gestão de banco de dados SQL Server, incluindo modelagem, consultas e otimização de performance.
-                Implementar soluções utilizando Dapper e Entity Framework para facilitar a interação com o banco de dados.
-                Implementar testes de unidade e integração, para validar o funcionamento das funcionalidades desenvolvidas.
-                Identificar e resolver bugs, realizando testes e validações para manter a estabilidade do sistema.
-            </Paragrafo>
-            <Linha/>
-            <Titulo>Grupo Services</Titulo>
-            <SubTitulo>Desenvolvedor Junior</SubTitulo>
-            <SubTitulo>out de 2020 - nov de 2021 · 1 ano 2 meses</SubTitulo>
-            <Paragrafo>
-                Desenvolver aplicações em Node.js, criando e implementando novas funcionalidades.
-                Realizar a configuração e suporte a um CRM.
-                Identificar e consumir APIs para integrar sistemas, facilitando disparos em massa de SMS do tipo flash.
-                Colaborar com a equipe para revisar e otimizar código.
-                Realizar testes unitários e de integração para validar novas funcionalidades.
-                Gerir tarefas utilizando ferramentas de controle de versão, como Git.
-                Auxiliar na identificação e resolução de falhas e problemas técnicos.
-            </Paragrafo>
-            <Linha/>
-            <Titulo>NHG</Titulo>
-            <SubTitulo>Desenvolvedor de Software</SubTitulo>
-            <SubTitulo>dez de 2022 - 2024 · 1 ano 2 meses</SubTitulo>
-            <Paragrafo>
-                Desenvolver features e corrigir bugs em sistemas de rastreamento de carga e controle de risco.
-                Implementar testes de unidade para garantir a qualidade do código.
-                Utilizar as tecnologias .NET, SQLServer, ReactJs, HTML, CSS e JavaScript para o desenvolvimento de aplicações web.
-                Criar e manter serviços Windows para automação de processos.
-                Gerenciar e otimizar consultas em bancos de dados SQLServer.
-            </Paragrafo>
-            </Section>
-            </Container>
-    )
- 
-}
+  return (
+    <section className="animate-fade-in-up px-6 py-16">
+      <div className="mx-auto max-w-4xl">
+        {/* Section header */}
+        <div className="mb-12 text-center">
+          <h2 className="mb-3 text-3xl font-bold text-white md:text-4xl">
+            Experiencia Profissional
+          </h2>
+          <div className="mx-auto h-1 w-20 rounded-full bg-gradient-to-r from-primary to-accent" />
+        </div>
+
+        {/* Timeline */}
+        <div className="relative">
+          {/* Timeline line */}
+          <div className="absolute left-0 top-0 hidden h-full w-px bg-gradient-to-b from-primary via-accent to-transparent md:left-8 md:block" />
+
+          <div className="space-y-8">
+            {experiencias.map((exp, index) => (
+              <div
+                key={index}
+                className="group relative md:pl-20"
+              >
+                {/* Timeline dot */}
+                <div className="absolute left-0 top-6 hidden h-4 w-4 -translate-x-1/2 rounded-full border-2 border-primary bg-surface transition-all duration-300 group-hover:scale-125 group-hover:border-accent md:left-8 md:block">
+                  {exp.atual && (
+                    <div className="absolute inset-0 animate-ping rounded-full bg-primary/50" />
+                  )}
+                </div>
+
+                {/* Card */}
+                <div className="rounded-xl border border-white/5 bg-surface-light/50 p-6 backdrop-blur-sm transition-all duration-300 hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5">
+                  <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <h3 className="text-lg font-bold text-white">
+                        {exp.empresa}
+                      </h3>
+                      <p className="text-sm font-medium text-primary-light">
+                        {exp.cargo}
+                      </p>
+                    </div>
+                    <span
+                      className={`inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-medium ${
+                        exp.atual
+                          ? "bg-green-500/10 text-green-400 ring-1 ring-green-500/20"
+                          : "bg-surface-lighter/50 text-gray-400"
+                      }`}
+                    >
+                      {exp.periodo}
+                    </span>
+                  </div>
+
+                  <p className="mb-4 text-sm leading-relaxed text-gray-400">
+                    {exp.descricao}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2">
+                    {exp.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="rounded-md bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary-light transition-colors hover:bg-primary/20"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

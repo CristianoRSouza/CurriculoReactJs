@@ -1,50 +1,18 @@
-import styled from "styled-components"
+export const Card = ({ autor, curso, icon }) => {
+  return (
+    <div className="group relative overflow-hidden rounded-xl border border-white/5 bg-surface-light/50 p-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5">
+      {/* Decorative gradient */}
+      <div className="pointer-events-none absolute -right-6 -top-6 h-20 w-20 rounded-full bg-primary/5 transition-all duration-500 group-hover:scale-150 group-hover:bg-primary/10" />
 
-const ItemCard = styled.div`
-background-color: #1E2A38;
-    width: 150px;
-    height: 150px;
-    border-radius: 6px;
-    text-align: center;
-    transition: 0.1s;
-    &:hover {
-        transform: translateY(-8px);
-    }
-
-    @media (max-width: 480px) {
-    width: 90px;
-    height: 90px;
-  }
-`
-const TituloCurso = styled.h5`
-    color:white;
-
-    @media (max-width: 480px) {
-    width: 100%;
-    height: 30px;
-    margin:0px;
-    padding:0px;
-    font-size:10px;
-  }
-`
-const Paragrafo = styled.p`
-    color:white;
-
-    @media (max-width: 480px) {
-    width: 100%;
-    height: 100%;
-    margin:0px;
-    padding:0px;
-    font-size:10px;
-  }
-`
-
-
-export const Card = ({ $autor, $curso }) => {
-    return (
-        <ItemCard>
-            <TituloCurso>{$autor}</TituloCurso>
-            <Paragrafo>{$curso}</Paragrafo>
-        </ItemCard>
-    );
+      <div className="relative">
+        {icon && <div className="mb-3 text-2xl">{icon}</div>}
+        <p className="mb-1 text-xs font-medium tracking-wider uppercase text-primary-light/70">
+          {autor}
+        </p>
+        <h3 className="text-sm font-semibold leading-snug text-white">
+          {curso}
+        </h3>
+      </div>
+    </div>
+  );
 };
